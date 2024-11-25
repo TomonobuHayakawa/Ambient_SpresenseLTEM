@@ -34,7 +34,7 @@ public:
   Ambient_SpresenseLTEM();
   ~Ambient_SpresenseLTEM();
   bool begin(String apn_name, String apn_usr_name, String apn_passwd);
-  void setupChannel(uint16_t channelId, String writeKey);
+  void setupChannel(uint32_t channelId, String writeKey);
   bool set(int field, String data);
   bool set(int field, double data);
   bool set(int field, int data);
@@ -44,7 +44,7 @@ public:
   void end();
 private:
   bool mInitialized;
-  uint16_t mChannelId;
+  uint32_t mChannelId;
   String mWriteKey;
 
   struct {

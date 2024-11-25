@@ -61,7 +61,7 @@ bool Ambient_SpresenseLTEM::begin(String apn_name, String apn_usrname, String ap
 
 }
 
-void Ambient_SpresenseLTEM::setupChannel(uint16_t channelId, String writeKey) {
+void Ambient_SpresenseLTEM::setupChannel(uint32_t channelId, String writeKey) {
   mChannelId = channelId;
   mWriteKey = writeKey;
   mInitialized = true;
